@@ -3,3 +3,11 @@ export interface Quote {
     author: string;
     description: string;
 }
+
+export interface Quotes extends Quote {
+    id: string;
+}
+
+export interface IQuote {
+    [id: string]: Quote;
+}
